@@ -11,6 +11,7 @@
 # Remove the ; to change parameters.
 
 [general]
+framerate = 30
 
 # Smoothing mode. Can be 'normal', 'scientific' or 'waves'. DEPRECATED as of 0.6.0
 ; mode = normal
@@ -87,11 +88,8 @@
 # For jack 'source' will be the name of the JACK server to connect to, e.g. 'foobar'. Default: 'default'.
 # README.md contains further information on how to setup CAVA for JACK.
 #
- method = pulse
- source = auto
-
- method = pipewire
- source = auto
+method = pipewire
+source = auto
 
 ; method = alsa
 ; source = hw:Loopback,1

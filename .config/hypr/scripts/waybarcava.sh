@@ -15,17 +15,15 @@ for ((i = 0; i < bar_length; i++)); do
 done
 
 # Create cava config
-config_file="/tmp/bar_cava_config"
+mkdir -p "$HOME/.cache/arch-hyprland"
+config_file="$HOME/.cache/arch-hyprland/waybar-cava"
 cat >"$config_file" <<EOF
 [general]
-# Older systems show significant CPU use with default framerate
-# Setting maximum framerate to 30  
-# You can increase the value if you wish
 framerate = 30
 bars = 10
 
 [input]
-method = pulse
+method = pipewire
 source = auto
 
 [output]
@@ -36,7 +34,7 @@ ascii_max_range = 7
 EOF
 
 # Kill cava if it's already running
-pkill -f "cava -p $config_file"
+pkill -f "[c]ava -p $config_file" 2>/dev/null || true
 
 # Read stdout from cava and perform substitution in a single sed command
 cava -p "$config_file" | sed -u "$dict"

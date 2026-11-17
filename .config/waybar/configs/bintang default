@@ -22,6 +22,10 @@
 "margin-right": 8,
 
 "modules-left": [
+	"custom/codex-apps",
+	"custom/codex-terminal",
+	"custom/codex-wallpaper",
+	"custom/separator#blank",
 	//"idle_inhibitor",
 	//"custom/separator#blank",
 	"clock",

@@ -1,0 +1,7 @@
+@import url("style/bintang default.css");
+
+#custom-codex-apps,
+#custom-codex-terminal,
+#custom-codex-wallpaper {
+	padding: 0 8px;
+}
