@@ -1,6 +1,8 @@
 # MY HYPRLAND RICE
 This rice uses configs from many repos, so it's not 100% pure my creation
 
+La configuración base viene de [binnewbs/arch-hyprland](https://github.com/binnewbs/arch-hyprland); este repositorio añade un instalador para Arch/CachyOS, ajustes de rendimiento para VirtualBox y botones de Waybar para abrir aplicaciones, Kitty y el selector de fondos.
+
 I use Matugen as the color scheme generator, so this dotfiles will work better with Matugen as you don't have to reconfigure every colors in the config file
 
 As for the wallpaper, i use swww. The wallpaper picker script that i made uses swww combined with Matugen, so you need to tweak the script a bit to work with your own system if you use a different wallpaper backend
